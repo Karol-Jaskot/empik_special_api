@@ -19,13 +19,13 @@ import java.util.List;
 public class RequestController {
 
     @Autowired
-    GithubApiService githubApiService;
+    private GithubApiService githubApiService;
 
     @Autowired
-    LoginActivityService loginActivityService;
+    private LoginActivityService loginActivityService;
 
     @Autowired
-    UserResponseService userResponseService;
+    private UserResponseService userResponseService;
 
     @GetMapping("/users/{login}")
     UserResponse getUserInfo(@PathVariable String login) {

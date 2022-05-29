@@ -15,7 +15,7 @@ public class LoginActivityService {
 
     private static Logger log = LogManager.getLogger(LoginActivityService.class);
     @Autowired
-    LoginActivityRepo repo;
+    private LoginActivityRepo repo;
 
     public void incrementLogin(String login){
         LoginActivity loginActivity = getLoginActivity(login);
